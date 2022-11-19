@@ -1,14 +1,21 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Abstract tree created within this file. 
+
+This abstract tree will implment the Tree.java file already created within 
+this Java Project .
  */
 package NewTreePackage;
 
-/**
- *
- * @author Jonathan Mohabir
- */
-public class AbstractTree {
+
+public abstract class AbstractTree<E> implements Tree<E>{
+    @Override
+    public void inorder(){
+        
+    }
+  
+    @Override
+    public boolean isEmpty(){
+        return getSize() == 0; 
+    }
     
 }

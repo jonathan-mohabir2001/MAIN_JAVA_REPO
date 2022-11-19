@@ -1,14 +1,34 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Tree Interface created within this java file. 
  */
 package NewTreePackage;
 
 /**
- *
- * @author Jonathan Mohabir
+Generic tree created below. Extends 
  */
-public class Tree {
+public interface Tree<E> extends Iterable<E> {
+    
+    public boolean search(E e); 
+    //Return a true if an element is within the tree. 
+    
+    
+    public boolean insert(E e); 
+    // insert an element into the binary search tree 
+    // return a true once element inserted successfully
+    
+    public boolean delete(E e); 
+    // Delete a specified element from a tree. 
+    
+    
+    public void inorder(); 
+    // traverse fro root within the inorder method. 
+    
+    public int getSize(); 
+    // return the number of nodes within a tree. 
+    
+    public boolean isEmpty(); 
+    // return true if the tree is empty. 
+    
+    
     
 }
