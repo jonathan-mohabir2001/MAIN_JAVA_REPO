@@ -1,4 +1,5 @@
 /*
+Lab-07, created by Jonathan M 
 
 Generic Stack created in this file. 
 This file contains methods in order to implement working with a stack 
