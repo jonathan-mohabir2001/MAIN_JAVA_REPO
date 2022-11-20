@@ -266,16 +266,11 @@ public class BinarySearchTree<E extends Comparable<E>> extends AbstractTree<E> {
             inorder(); // Traverse binary tree and store elements in list
         }
 
-        /**
-         * Inorder traversal from the root
-         */
         private void inorder() {
             inorder(root);
         }
 
-        /**
-         * Inorder traversal from a subtree
-         */
+     
         private void inorder(TreeNode<E> root) {
             if (root == null) return;
             inorder(root.left);
